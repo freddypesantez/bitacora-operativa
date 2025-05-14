@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bitácora Operativa CELEC EP</title>
+</head>
+<body>
+  <h1>Ingreso de Evento Operativo</h1>
+  <form action="https://webhook.site/https://webhook.site/f6f8b80d-9948-4dac-800e-bc803160becd" method="POST">
+    <label for="central">Nombre de la Central:</label><br>
+    <input type="text" id="central" name="central" required><br><br>
+
+    <label for="unidad">Unidad:</label><br>
+    <input type="text" id="unidad" name="unidad" required><br><br>
+
+    <label for="fecha">Fecha y Hora:</label><br>
+    <input type="datetime-local" id="fecha" name="fecha" required><br><br>
+
+    <label for="estado">Estado Operativo:</label><br>
+    <select id="estado" name="estado">
+      <option value="normal">Normal</option>
+      <option value="falla">Falla</option>
+      <option value="mantenimiento">Mantenimiento</option>
+    </select><br><br>
+
+    <label for="observaciones">Observaciones:</label><br>
+    <textarea id="observaciones" name="observaciones" rows="4" cols="50"></textarea><br><br>
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
